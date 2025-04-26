@@ -1,13 +1,4 @@
-import React from 'react';
-import Portfolio from './Portfolio';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <Portfolio />
-    </div>
-  );
+.App {
+  text-align: center;
+  padding: 2rem;
 }
-
-export default App;
