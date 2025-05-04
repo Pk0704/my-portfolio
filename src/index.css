@@ -1,0 +1,36 @@
+/* Load custom font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+
+/* Theme variables */
+:root {
+  --color-light-blue: #add8e6;
+  --bg-dark: #0f172a;
+  --bg-section: #1e293b;
+}
+
+/* Reset a few defaults */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Full‑height root & global styles */
+html,
+body,
+#root {
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  background-color: var(--bg-dark);
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+/* Default link styling */
+a {
+  color: var(--color-light-blue);
+  text-decoration: none;
+}
