@@ -18,26 +18,26 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      title: 'MTA with AI Agent',
+      title: 'UrbanFlow AI Visualizer',
       description:
-        'A full-stack e-commerce solution with React frontend and Node.js backend.',
-      technologies: ['Python - Streamlit'],
-      link: '#',
+        'A real-time, interactive 3D traffic congestion dashboard utilizing AI agents and live weather and air-quality API feeds',
+      technologies: ['Python - Streamlit', 'Folium', 'Polars', 'LangChain'],
+      link: 'https://github.com/Pk0704/nyc-congestion-visualizer',
     },
     {
       id: 2,
-      title: 'Real - Time Market Forecasting',
+      title: 'Real-Time Market Forecasting',
       description:
-        'Web app that uses AI to generate creative content for marketers.',
+        'Sophisticated market prediction system, incorporating 79 features and analyzing over 4.5 million data points to forecast financial market movements',
       technologies: ['Python - LightGBM, Ridge Regression'],
-      link: '#',
+      link: 'https://github.com/Pk0704/Market_Data_Forecasting-Pk-Tp',
     },
     {
       id: 3,
       title: 'Automated Generation Tool',
-      description: 'Q-network.',
-      technologies: ['PyTorch', 'D3.js', 'Firebase', 'Material UI'],
-      link: '#',
+      description: 'A content generation tool to create dynamic and stylistically varied stories, poems, and journals, integrating a reinforcement learning framework to enhance content quality',
+      technologies: ['PyTorch', 'Q-Network', 'TF-IDF vectorization'],
+      link: 'https://github.com/Pk0704/AutomationTool',
     },
   ];
 
@@ -97,7 +97,7 @@ const Portfolio = () => {
             <h1 className="hero-title">
               <span className="accent">Hello, </span>I'm Peter
             </h1>
-            <p className="hero-subtitle">Math &amp; DS</p>
+            <p className="hero-subtitle">Math &amp; Data science</p>
             <div className="hero-actions">
               <a href="#projects" className="btn">
                 View My Work
@@ -193,7 +193,7 @@ const Portfolio = () => {
               </ul>
               <div className="social-links">
                 <a href="https://github.com/pk0704">GitHub</a>
-                <a href="https://linkedin.com">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/peterkaloev/">LinkedIn</a>
                 <a href="https://twitter.com">Twitter</a>
               </div>
             </div>
@@ -201,11 +201,11 @@ const Portfolio = () => {
               <form>
                 <label>
                   Name
-                  <input type="text" placeholder="Peter Kaloev" />
+                  <input type="text" placeholder="John Smith" />
                 </label>
                 <label>
                   Email
-                  <input type="email" placeholder="pp.kaloev@yahoo.com" />
+                  <input type="email" placeholder="" />
                 </label>
                 <label>
                   Message
