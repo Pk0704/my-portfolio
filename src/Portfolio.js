@@ -49,8 +49,8 @@ const Portfolio = () => {
         style={{
           width: '300px',
           height: '300px',
-          left: mousePosition.x - 150,
-          top: mousePosition.y - 150,
+          left: mousePosition.x - 100,
+          top: mousePosition.y - 100,
           transform: 'translate(-50%, -50%)',
         }}
       />
@@ -122,13 +122,13 @@ const Portfolio = () => {
             <div className="about-text">
               <p>
                 Hey, I'm Peter! I grew up in the UK for 13 years and now live in
-                New York City as a rising senior at NYU majoring in mathematics
+                New York City, as a rising senior at NYU majoring in mathematics
                 and data science. I love statistics, machine learning, data
                 science, software development, and AI safety.
               </p>
               <p>
-                In my free time I train jiu-jitsu, cook, play poker, and read
-                political theory.
+                In my free time, I train jiu-jitsu, cook, play poker, and read
+                political theory and research papers about AI Safety (Alignment & Interpretability).
               </p>
               <div className="skills">
                 {['Python', 'Java', 'SQL', 'C++', 'React.js', 'JavaScript'].map(
