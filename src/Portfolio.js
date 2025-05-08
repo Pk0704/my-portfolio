@@ -49,8 +49,8 @@ const Portfolio = () => {
         style={{
           width: '300px',
           height: '300px',
-          left: mousePosition.x - 100,
-          top: mousePosition.y - 100,
+          left: `${mousePosition.x}px`,
+          top: `${mousePosition.y}px`,
           transform: 'translate(-50%, -50%)',
         }}
       />
