@@ -21,12 +21,14 @@ const Portfolio = () => {
       title: 'UrbanFlow AI Visualizer',
       description:
         'A real-time, interactive 3D traffic congestion dashboard utilizing AI agents and live weather and air-quality API feeds',
+      image:'/images/TrafficFlow.png',
       technologies: ['Python - Streamlit', 'Folium', 'Polars', 'LangChain'],
       link: 'https://github.com/Pk0704/nyc-congestion-visualizer',
     },
     {
       id: 2,
       title: 'Real-Time Market Forecasting',
+      image: '/images/TimeSeries.png',
       description:
         'Sophisticated market prediction system, incorporating 79 features and analyzing over 4.5 million data points to forecast financial market movements',
       technologies: ['Python - LightGBM, Ridge Regression'],
@@ -151,10 +153,9 @@ const Portfolio = () => {
               <div key={project.id} className="project-card">
                 <div className="project-image">
                   <img
-                    src={`/api/placeholder/600/300?text=${encodeURIComponent(
-                      project.title
-                    )}`}
+                    src={project.image}
                     alt={project.title}
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="project-details">
