@@ -38,6 +38,7 @@ const Portfolio = () => {
       id: 3,
       title: 'Automated Generation Tool',
       description: 'A content generation tool to create dynamic and stylistically varied stories, poems, and journals, integrating a reinforcement learning framework to enhance content quality',
+      image: '/images/RL.png',
       technologies: ['PyTorch', 'Q-Network', 'TF-IDF vectorization'],
       link: 'https://github.com/Pk0704/AutomationTool',
     },
@@ -195,7 +196,6 @@ const Portfolio = () => {
               <div className="social-links">
                 <a href="https://github.com/pk0704">GitHub</a>
                 <a href="https://www.linkedin.com/in/peterkaloev/">LinkedIn</a>
-                <a href="https://twitter.com">Twitter</a>
               </div>
             </div>
             <div className="contact-form">
@@ -206,7 +206,7 @@ const Portfolio = () => {
                 </label>
                 <label>
                   Email
-                  <input type="email" placeholder="" />
+                  <input type="email" placeholder="John.Smith@example.com" />
                 </label>
                 <label>
                   Message

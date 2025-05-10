@@ -8,7 +8,7 @@ function HumanModel() {
   const { scene } = useGLTF('/models/human.glb');
   // Rotate the model so it’s looking up:
   scene.rotation.x = -0.2;   // tilt back ~12°
-  scene.position.y = -1.5;   // lower it so it sits in view
+  scene.position.y = 0.8;   // lower it so it sits in view
   return <primitive object={scene} />;
 }
 
