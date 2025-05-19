@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import ExperienceSection from './components/ExperienceSection';
 
 const Portfolio = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -70,7 +71,7 @@ const Portfolio = () => {
         <nav className="desktop-nav">
           <a href="#home">Home</a>
           <a href="#about">About</a>
-          <a href="#Experience">Experience</a>
+          <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -146,7 +147,8 @@ const Portfolio = () => {
             </div>
           </div>
         </section>
-
+        {/* Experience slider */}
+        <ExperienceSection />
         {/* Projects section */}
         <section id="projects" className="projects">
           <h2>My Projects</h2>
@@ -178,7 +180,6 @@ const Portfolio = () => {
             ))}
           </div>
         </section>
-
         {/* Contact section */}
         <section id="contact" className="contact">
           <h2>Get In Touch</h2>
@@ -229,7 +230,7 @@ const Portfolio = () => {
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
-            <a href="experience">Experience</a>
+            <a href="#experience">Experience</a>
             <a href="#contact">Contact</a>
           </nav>
         </div>

@@ -1,7 +1,7 @@
 {
   "name": "my-portfolio",
   "version": "1.0.0",
-  "homepage": "https://pk0704.github.io/my-portfolio",
+  "homepage": ".",
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
