@@ -70,6 +70,7 @@ const Portfolio = () => {
         <nav className="desktop-nav">
           <a href="#home">Home</a>
           <a href="#about">About</a>
+          <a href="#Experience">Experience</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -98,7 +99,7 @@ const Portfolio = () => {
         <section id="home" className="hero">
           <div className="hero-content">
             <h1 className="hero-title">
-              <span className="accent">Hello, </span>I'm Peter
+              <span className="accent">Hey, </span>I'm Peter
             </h1>
             <p className="hero-subtitle">Math &amp; Data science</p>
             <div className="hero-actions">
@@ -124,17 +125,17 @@ const Portfolio = () => {
             </div>
             <div className="about-text">
               <p>
-                Hey, I'm Peter! I grew up in the UK for 13 years and now live in
-                New York City, as a rising senior at NYU majoring in mathematics
+                My name is Peter! I was born in Russia, but grew up in the UK for 13 years of my life and now live in
+                New York City, where I am a senior at NYU majoring in mathematics
                 and data science. I love statistics, machine learning, data
                 science, software development, and AI safety.
               </p>
               <p>
-                In my free time, I train jiu-jitsu, cook, play poker, and read
+                In my free time, I train jiu-jitsu (3 years and counting!), cook, play poker, and read
                 political theory and research papers about AI Safety (Alignment & Interpretability).
               </p>
               <div className="skills">
-                {['Python', 'Java', 'SQL', 'C++', 'React.js', 'JavaScript'].map(
+                {['Python', 'Java', 'SQL', 'C++', 'React.js', 'JavaScript', 'R'].map(
                   (skill) => (
                     <span key={skill} className="skill-pill">
                       {skill}
@@ -185,8 +186,7 @@ const Portfolio = () => {
             <div className="contact-info">
               <h3>Contact Information</h3>
               <p>
-                Feel free to reach out! I’m always open to discussing new
-                projects, creative ideas, or opportunities.
+                If you want to work on a project, or just want to connect, feel free to reach out! I’m always open to discussing new opportunities!
               </p>
               <ul>
                 <li>Email: pp.kaloev@yahoo.com</li>
@@ -229,6 +229,7 @@ const Portfolio = () => {
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
+            <a href="experience">Experience</a>
             <a href="#contact">Contact</a>
           </nav>
         </div>
