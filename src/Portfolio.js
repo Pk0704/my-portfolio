@@ -120,8 +120,9 @@ const Portfolio = () => {
           <div className="about-content">
             <div className="profile-pic">
               <img
-                src="/api/placeholder/400/400"
-                alt="Profile"
+                src="/images/profile.jpg"
+                alt="Peter Kaloev"
+                className="w-full h-full object-cover"
               />
             </div>
             <div className="about-text">
