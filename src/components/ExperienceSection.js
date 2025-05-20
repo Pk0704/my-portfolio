@@ -2,44 +2,44 @@ import React, { useState, useRef, useEffect } from 'react';
 import './ExperienceSection.css';
 
 const experiences = [
-  {
+    {
     id: 1,
-    date: 'Jun 2025 – Aug 2025',
-    title: 'Quantitative Software Developer Intern',
-    company: 'Royal Bank of Canada Capital Markets',
+    date: 'Starting July 2025',
+    title: 'AI Safety Researcher',
+    company: 'Courant Institute of Mathematical Sciences',
     bullets: [
-      'Designed and implemented a centralized monitoring solution for Clarity-DEA using CloudWatch, TypeScript, AWS CDK, reducing MTTR by 40%',
-      'Deployed CloudWatch alarms/dashboards for Redshift, Lambda, Glue, Step Functions across multiple accounts',
-      'Built Level 3 CDK constructs to standardize monitoring deployments and improve scalability'
+        'Working on alignment and making black box models transparent'
     ]
   },
   {
     id: 2,
-    date: 'Jan 2025 – Present',
-    title: 'Lead Data Engineer Intern',
-    company: 'Biokind Analytics',
+    date: 'Jun 2025 – Aug 2025',
+    title: 'Quantitative Software Developer Intern',
+    company: 'Royal Bank of Canada Capital Markets',
     bullets: [
       'Incoming Summer 2025'
     ]
   },
   {
     id: 3,
-    date: 'May 2024 – July 2024',
-    title: 'Data Science Intern',
-    company: 'IFM Investors',
+    date: 'Jan 2025 – Present',
+    title: 'Lead Data Engineer Intern',
+    company: 'Biokind Analytics',
     bullets: [
-      'Incoming Summer 2025'
+      'Directed 5 data scientists in a high-impact project for Alliance NYC, uncovering statistical trends in HIV data.',
+      'Architected and implemented an automated, microservices-driven data ingestion pipeline for Master Client integration—leveraging Apache Kafka for real-time streaming, normalization, fuzzy duplicate detection, and unique ID generation to ensure transactional database integrity and asynchronous Excel synchronization at scale.'
     ]
   },
   {
     id: 4,
     date: 'May 2024 – July 2024',
-    title: 'AI Safety Researcher',
-    company: 'NYU Courant – Pavel Izmailov Lab',
+    title: 'Data Science Intern',
+    company: 'IFM Investors',
     bullets: [
-      'Work on AI Alignment and making black box models transparent'
+        'Engineered a back-end SQL database to manage $900 million in past and ongoing deals, successfully migrating 100% of investors to the system by integrating data into eFront and Aladdin, providing company-wide data accessibility, enabling simpler, centralized deal tracking.',
+        'Accomplished enhanced strategic decision-making for over 20 companies, accelerating deal closures, by integrating data from financial statements and SQL databases, using Docker containers and Tableau to create reproducible financial analysis workflows and reports that delivered targeted sector insights.'
     ]
-  }
+  },
 ];
 
 export default function ExperienceSection() {
