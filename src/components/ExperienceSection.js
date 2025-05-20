@@ -30,6 +30,15 @@ const experiences = [
     bullets: [
       'Incoming Summer 2025'
     ]
+  },
+  {
+    id: 4,
+    date: 'May 2024 – July 2024',
+    title: 'AI Safety Researcher',
+    company: 'NYU Courant – Pavel Izmailov Lab',
+    bullets: [
+      'Work on AI Alignment and making black box models transparent'
+    ]
   }
 ];
 
@@ -60,18 +69,24 @@ export default function ExperienceSection() {
         className="experience-slides"
         style={{ transform: `translateY(-${index * 100}vh)` }}
       >
-        {experiences.map(exp => (
-          <div className="experience-slide" key={exp.id}>
-            <div className="exp-card">
-              <div className="exp-date">{exp.date}</div>
-              <h3 className="exp-title">{exp.title}</h3>
-              <div className="exp-company">{exp.company}</div>
-              <ul className="exp-bullets">
-                {exp.bullets.map((b,i) => <li key={i}>{b}</li>)}
-              </ul>
+        {experiences.map((exp, idx) => {
+          // alternate cards left/right
+          const side = idx % 2 === 0 ? 'left' : 'right';
+          return (
+            <div className="experience-slide" key={exp.id}>
+              <div className={`exp-card ${side}`}>
+                <div className="exp-date">{exp.date}</div>
+                <h3 className="exp-title">{exp.title}</h3>
+                <div className="exp-company">{exp.company}</div>
+                <ul className="exp-bullets">
+                  {exp.bullets.map((b, i) => (
+                    <li key={i}>{b}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </section>
   );
