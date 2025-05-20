@@ -2,10 +2,10 @@
     position: relative;
     height: 100vh;
     overflow: hidden;
-  }
+}
   
   /* central spine */
-  .experience-section::before {
+.experience-section::before {
     content: '';
     position: absolute;
     top: 0;
@@ -15,59 +15,99 @@
     background-color: var(--color-light-blue);
     transform: translateX(-50%);
     z-index: 0;
-  }
+}
   
-  .experience-slides {
+  /* slide container */
+.experience-slides {
     transition: transform 0.8s ease;
-  }
+}
   
-  /* each slide = full view height */
-  .experience-slide {
+  /* each slide */
+.experience-slide {
     position: relative;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
   
-  /* common card styling */
-  .exp-card {
+  /* add a static white dot */
+.experience-slide::before {
+    content: '';
+    position: absolute;
+    top: 50%;               /* same vertical center as your card pointer */
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+  
+  /* ripple effect circle */
+.experience-slide::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    animation: ripple 1.8s ease-out infinite;
+    z-index: 0;
+}
+  
+@keyframes ripple {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(3);
+      opacity: 0;
+    }
+}
+  
+  /* your exp-card left/right and arrow pointer rules… */
+.exp-card {
     position: relative;
     background: rgba(255,255,255,0.05);
     padding: 2rem;
     border-radius: 0.5rem;
     max-width: 45%;
-    z-index: 1;
-  }
+    z-index: 2; /* above dot/ripple */
+}
   
-  /* arrow pointer back to line */
-  .exp-card::after {
+.exp-card.left {
+    margin-right: auto;
+    text-align: right;
+}
+.exp-card.left::after {
     content: '';
     position: absolute;
     top: 50%;
-    width: 0; height: 0;
+    right: -20px;
     border: 10px solid transparent;
-    transform: translateY(-50%);
-  }
-  
-  /* left‐side cards */
-  .exp-card.left {
-    margin-right: auto;            /* push it to the left side */
-    text-align: right;
-  }
-  .exp-card.left::after {
-    right: -20px;                  /* pointer on the right edge */
     border-left-color: var(--color-light-blue);
-  }
+    transform: translateY(-50%);
+}
   
-  /* right‐side cards */
   .exp-card.right {
-    margin-left: auto;             /* push it to the right side */
+    margin-left: auto;
     text-align: left;
   }
   .exp-card.right::after {
-    left: -20px;                   /* pointer on the left edge */
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    border: 10px solid transparent;
     border-right-color: var(--color-light-blue);
+    transform: translateY(-50%);
   }
   
   /* typography inside cards */
