@@ -17,7 +17,7 @@ const experiences = [
     title: 'Quantitative Software Developer Intern',
     company: 'Royal Bank of Canada Capital Markets',
     bullets: [
-      'Incoming Summer 2025'
+      'Incoming Summer 2025 - Using machine learning to optimize models on the algorithmic trading desk'
     ]
   },
   {
