@@ -104,10 +104,10 @@ const Portfolio = () => {
             </h1>
             <p className="hero-subtitle">Math &amp; Data science</p>
             <div className="hero-actions">
-              <a href="#projects" className="btn">
+              <a href="https://github.com/Pk0704?tab=repositories" className="btn" target="_blank" rel="noopener noreferrer">
                 View My Work
               </a>
-              <a href="#contact" className="btn-outline">
+              <a href="mailto:pp.kaloev@yahoo.com" className="btn-outline">
                 Contact Me
               </a>
             </div>
