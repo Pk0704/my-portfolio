@@ -3,7 +3,7 @@
 
 /* Theme variables */
 :root {
-  --color-light-blue: #add8e6;
+  --color-light-blue: #24bcd3;
   --bg-dark: #0f172a;
   --bg-section: #1e293b;
 }
@@ -17,7 +17,7 @@
   padding: 0;
 }
 
-/* Full‑height root & global styles */
+/* Full-height root & global styles */
 html,
 body,
 #root {
@@ -33,4 +33,22 @@ body,
 a {
   color: var(--color-light-blue);
   text-decoration: none;
+}
+
+@keyframes accent-cycle {
+  0%   { color: #22d3ee; }  /* cyan */
+  20%  { color: #ec4899; }  /* pink */
+  40%  { color: #10b981; }  /* emerald */
+  60%  { color: #f59e0b; }  /* amber */
+  80%  { color: #6366f1; }  /* violet */
+  100% { color: #ef4444; }  /* vibrant red */
+}
+
+
+.accent {
+  animation-name: accent-cycle;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 5;
+  animation-fill-mode: forwards;
 }

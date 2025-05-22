@@ -15,7 +15,7 @@ function HumanModel() {
 export default function ThreeScene() {
   return (
     <Canvas
-      style={{ width: '100%', height: '100vh', position: 'absolute', top: 0 }}
+      style={{ width: '100%', height: '70vh', position: 'absolute', top: 0 }}
       camera={{ position: [0, 1.5, 4], fov: 50 }}
     >
       {/* simple lights */}

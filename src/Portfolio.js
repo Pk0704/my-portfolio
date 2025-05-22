@@ -99,9 +99,10 @@ const Portfolio = () => {
         {/* Hero section */}
         <section id="home" className="hero">
           <div className="hero-content">
-            <h1 className="hero-title">
-              <span className="accent">Hey, </span>I'm Peter
-            </h1>
+          <h1 className="hero-title">
+            Hey, I'm <span className="accent">Peter</span>
+          </h1>
+
             <p className="hero-subtitle">Math &amp; Data science</p>
             <div className="hero-actions">
               <a href="https://github.com/Pk0704?tab=repositories" className="btn" target="_blank" rel="noopener noreferrer">
@@ -226,7 +227,7 @@ const Portfolio = () => {
       {/* Footer */}
       <footer className="site-footer">
         <div className="footer-content">
-          <div className="footer-brand">Peter Kaloev</div>
+          <div className="footer-brand">Made with care by Peter Kaloev</div>
           <nav className="footer-nav">
             <a href="#home">Home</a>
             <a href="#about">About</a>
