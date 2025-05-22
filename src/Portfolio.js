@@ -128,10 +128,7 @@ const Portfolio = () => {
             </div>
             <div className="about-text">
               <p>
-                My name is Peter! I was born in Russia, but grew up in the UK for 13 years of my life and now live in
-                New York City, where I am a senior at NYU majoring in mathematics
-                and data science. I love statistics, machine learning, data
-                science, software development, and AI safety.
+              I'm Peter, a senior at NYU majoring in mathematics and data science! Originally from Russia, I spent 13 years in the UK before moving to New York City. I love statistics, machine learning, software development, and AI safety, with particular interest in machine learning research, software engineering, and quantitative finance roles.
               </p>
               <p>
                 In my free time, I train jiu-jitsu (3 years and counting!), cook, play poker, and read
