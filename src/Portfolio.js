@@ -23,7 +23,7 @@ const Portfolio = () => {
       description:
         'A real-time, interactive 3D traffic congestion dashboard utilizing AI agents and live weather and air-quality API feeds',
       image:'/images/TrafficFlow.png',
-      technologies: ['Python - Streamlit', 'Folium', 'Polars', 'LangChain'],
+      technologies: ['Streamlit', 'Folium', 'Polars', 'LangChain'],
       link: 'https://github.com/Pk0704/nyc-congestion-visualizer',
     },
     {
@@ -32,7 +32,7 @@ const Portfolio = () => {
       image: '/images/TimeSeries.png',
       description:
         'Sophisticated market prediction system, incorporating 79 features and analyzing over 4.5 million data points to forecast financial market movements',
-      technologies: ['Python - LightGBM, Ridge Regression'],
+      technologies: ['LightGBM Regression, Ridge Regression', 'Lagged Time-Series'],
       link: 'https://github.com/Pk0704/Market_Data_Forecasting-Pk-Tp',
     },
     {
@@ -85,6 +85,9 @@ const Portfolio = () => {
           </a>
           <a href="#about" onClick={() => setIsMenuOpen(false)}>
             About
+          </a>
+          <a href="#experience" onClick={() => setIsMenuOpen(false)}>
+            Experience
           </a>
           <a href="#projects" onClick={() => setIsMenuOpen(false)}>
             Projects
