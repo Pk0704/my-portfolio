@@ -17,7 +17,7 @@ const experiences = [
     title: 'Quantitative Software Developer Intern',
     company: 'Royal Bank of Canada Capital Markets',
     bullets: [
-      'Architected data pipeline integrating options trade data from KDB+ queries into an IsolationForest machine learning model to detect trading anomalies, processing high-frequency data and slashing error rates from 3% to 0.34% while enabling automated market surveillance} operations.',
+      'Architected data pipeline integrating options trade data from KDB+ queries into an IsolationForest machine learning model to detect trading anomalies, processing high-frequency data and slashing error rates from 3% to 0.34% while enabling automated market surveillance operations.',
       'Worked closely with live trade data and FX systems.',
       'Engineered statistical analysis pipeline querying EOD trade data from Dremio, performing comprehensive market analytics on equities, and integrating a RAG chatbot using LLM technology to deliver natural language insights and automated report generation for trading desk decision-making.'
     ]
