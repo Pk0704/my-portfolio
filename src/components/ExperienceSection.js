@@ -2,15 +2,6 @@ import React, { useState, useRef, useEffect } from 'react';
 import './ExperienceSection.css';
 
 const experiences = [
-    {
-    id: 1,
-    date: 'Starting July 2025',
-    title: 'AI Safety Researcher',
-    company: 'Courant Institute of Mathematical Sciences',
-    bullets: [
-        'Working on alignment and making black box models transparent'
-    ]
-  },
   {
     id: 2,
     date: 'Jun 2025 – Aug 2025',
