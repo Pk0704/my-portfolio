@@ -3,6 +3,16 @@ import './ExperienceSection.css';
 
 const experiences = [
   {
+    id: 1,
+    date: 'Jan 2026 – March 2025',
+    title: 'Quantitative Trader Intern',
+    company: 'Royal Bank of Canada Capital Markets',
+    bullets: [
+      'Worked with the semi-systematic Internation ETF Market-Making Team, working on create/redeem baskets.',
+      'Created a pricing algorithm using ML in a pipeline with proprietary data to predict local opening of APAC ETF prices during US overnight hours.'
+    ]
+  },
+  {
     id: 2,
     date: 'Jun 2025 – Aug 2025',
     title: 'Quantitative Software Developer Intern',
